@@ -1,3 +1,7 @@
+let hutOfStart = tilemap`level1`
+color.setPalette(
+color.GrayScale
+)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . f f . . . . . . . 
@@ -16,3 +20,4 @@ let mySprite = sprites.create(img`
     . . . . . . . f f . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
+color.startFadeFromCurrent(color.originalPalette)
